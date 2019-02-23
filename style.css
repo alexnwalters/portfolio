@@ -45,6 +45,12 @@ p, .nav-list {
     .nav-list {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .nav-list li {
+        padding: 0 20px;
     }
 
     .hamburger {
