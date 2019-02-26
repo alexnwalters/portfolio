@@ -139,12 +139,16 @@ section .container {
 }
 
 .underline-green {
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #00bb7d;
     text-decoration-line: underline;
     text-decoration-color: #00bb7d;
     font-weight: bold;
 }
 
 .underline-blue {
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #00d9ff;
     text-decoration-line: underline;
     text-decoration-color:  #00d9ff;
     font-weight: bold;
@@ -165,29 +169,25 @@ a:link, a:visited {
 
 .projects a {
     font-weight: bold;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #00d9ff;
     text-decoration-line: underline;
     text-decoration-color: #00d9ff;
     margin-left: 10px;
 }
 
-.projects a:hover {
+.projects a:hover, .socials a:hover {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #00bb7d;
     text-decoration-line: underline;
     text-decoration-color: #00bb7d;
 }
 
 .socials a {
     font-size: 32px;
-}
-
-.socials a:hover {
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-color: #00bb7d;
 }
 
 @media screen and (min-width: 520px) {
