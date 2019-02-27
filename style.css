@@ -8,19 +8,33 @@ body {
     text-align: center;
 }
 
-.about {
+.js-hide {
+    display: none;
+}
+
+.home {
     background-repeat: no-repeat;
-    background-image: linear-gradient(to left, rgb(255, 255, 255, .75), white, white), url(images/palm_concrete.jpg);
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255, .5), white, white), url(images/palm_sky.jpg);
     background-size: cover;
     background-position: right;
+
+}
+
+.about {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, rgb(255, 255, 255, .7), white, white), url(images/palm_concrete.jpg);
+    background-size: cover;
+    
 }
 
 .projects {
-    background-image: linear-gradient(to bottom left, rgb(255, 255, 255, .8), white, white), url(images/seamless_concrete.jpg);
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255, .7), white, white), url(images/seamless_concrete.jpg);
 }
 
 .contact {
-    background-image: linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(images/seamless_concrete.jpg);
+    background-image: linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(images/palm-corner.jpg);
+    background-size: cover;
+    
 }
 
 nav {
@@ -32,8 +46,12 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background: white;
+    /*background: white;*/
     z-index: 1;
+}
+
+nav li {
+    font-size: 
 }
 
 .hamburger {
@@ -108,8 +126,6 @@ section .container {
 .screenshot img {
     max-width: 65vw;
     max-height: 65vh;
-    border: 4px solid white;
-    border-radius: 4%;
 }
 
 .screenshot-top {
@@ -264,6 +280,10 @@ a:link, a:visited {
         width: 33vw;
         margin-bottom: 20px;
     }
+
+    .js-hide {
+        display: none;
+    }
 }
 
 
@@ -328,5 +348,13 @@ a:link, a:visited {
 
     .projects p, .projects a {
         font-size: 20px;
+    }
+
+    h3 {
+        font-size: 30px; 
+    }
+    
+    .js-hide {
+        display: none;
     }
 }
