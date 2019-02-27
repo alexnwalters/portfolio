@@ -14,7 +14,7 @@ body {
 
 .home {
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255, .5), white, white), url(images/palm_sky.jpg);
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
     background-size: cover;
     background-position: right;
 
@@ -22,17 +22,17 @@ body {
 
 .about {
     background-repeat: no-repeat;
-    background-image: linear-gradient(to left, rgb(255, 255, 255, .7), white, white), url(images/palm_concrete.jpg);
+    background-image: linear-gradient(to left, rgb(255, 255, 255, .7), white, white), url(images/palm_concrete1.jpg);
     background-size: cover;
     
 }
 
 .projects {
-    background-image: linear-gradient(to bottom left, rgb(255, 255, 255, .7), white, white), url(images/seamless_concrete.jpg);
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255, .7), white, white), url(images/seamless_concrete1.jpg);
 }
 
 .contact {
-    background-image: linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(images/palm-corner.jpg);
+    background-image: linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(images/palm-corner1.jpg);
     background-size: cover;
     
 }
