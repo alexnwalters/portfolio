@@ -37,9 +37,9 @@ body {
 }
 
 .contact {
-    background-image: linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(images/palm-corner1.jpg);
-    background-image: -webkit-linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(images/palm-corner1.jpg);
-    background-image: -moz-linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(images/palm-corner1.jpg);
+    background-image: linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(portfolio/images/palm-corner1.jpg);
+    background-image: -webkit-linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(portfolio/images/palm-corner1.jpg);
+    background-image: -moz-linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(portfolio/images/palm-corner1.jpg);
     background-size: cover;
 }
 
