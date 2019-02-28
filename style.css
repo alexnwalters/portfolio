@@ -14,32 +14,31 @@ body {
 
 .home {
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
-    background-image: -webkit-linear-gradient(to bottom right, rgb(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
-    background-image: -moz-linear-gradient(to bottom right, rgb(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
+    background-image: -webkit-linear-gradient(to bottom right, rgba(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
+    background-image: -moz-linear-gradient(to bottom right, rgba(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
     background-size: cover;
     background-position: right;
-
 }
 
 .about {
     background-repeat: no-repeat;
-    background-image: linear-gradient(to left, rgb(255, 255, 255, .7), white, white), url(images/palm_concrete1.jpg);
-    background-image: -webkit-linear-gradient(to left, rgb(255, 255, 255, .7), white, white), url(images/palm_concrete1.jpg);
-    background-image: -moz-linear-gradient(to left, rgb(255, 255, 255, .7), white, white), url(images/palm_concrete1.jpg);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, .7), white, white), url(images/palm_concrete1.jpg);
+    background-image: -webkit-linear-gradient(to left, rgba(255, 255, 255, .7), white, white), url(images/palm_concrete1.jpg);
+    background-image: -moz-linear-gradient(to left, rgba(255, 255, 255, .7), white, white), url(images/palm_concrete1.jpg);
     background-size: cover;
 }
 
 .projects {
-    background-image: linear-gradient(to bottom left, rgb(255, 255, 255, .7), white, white), url(images/seamless_concrete1.jpg);
-    background-image: -webkit-linear-gradient(to bottom left, rgb(255, 255, 255, .7), white, white), url(images/seamless_concrete1.jpg);
-    background-image: -moz-linear-gradient(to bottom left, rgb(255, 255, 255, .7), white, white), url(images/seamless_concrete1.jpg);
+    background-image: linear-gradient(to bottom left, rgba(255, 255, 255, .7), white, white), url(images/seamless_concrete1.jpg);
+    background-image: -webkit-linear-gradient(to bottom left, rgba(255, 255, 255, .7), white, white), url(images/seamless_concrete1.jpg);
+    background-image: -moz-linear-gradient(to bottom left, rgba(255, 255, 255, .7), white, white), url(images/seamless_concrete1.jpg);
 }
 
 .contact {
-    background-image: linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(portfolio/images/palm-corner1.jpg);
-    background-image: -webkit-linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(portfolio/images/palm-corner1.jpg);
-    background-image: -moz-linear-gradient(to top left, rgb(255, 255, 255, .7), white, white), url(portfolio/images/palm-corner1.jpg);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, .5), white, white), url(images/palm-corner1.jpg);
+    background-image: -webkit-linear-gradient(to left, rgba(255, 255, 255, .5), white, white), url(images/palm-corner1.jpg);
+    background-image: -moz-linear-gradient(to left, rgba(255, 255, 255, .5), white, white), url(images/palm-corner1.jpg);
     background-size: cover;
 }
 
@@ -52,12 +51,18 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    /*background: white;*/
+    background: rgba(255, 255, 255, .9);
     z-index: 1;
 }
 
-nav li {
-    font-size: 
+.nav-list {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-list li:hover {
+    font-weight: bold;
+    color: #00d9ff;
 }
 
 .hamburger {
@@ -72,13 +77,15 @@ nav li {
 header, section {
     min-height: 100vh;
     padding: 100px 0;
-    border-bottom: 2px solid;
 }
 
 .mugshot img {
     height: 30vh;
     border-radius: 50%;
     filter: grayscale(100%);
+    -webkit-box-shadow: -5px -5px 50px 6px rgba(0,0,0,0.25);
+    -moz-box-shadow: -5px -5px 50px 6px rgba(0,0,0,0.25);
+    box-shadow: -5px -5px 50px 6px rgba(0,0,0,0.25);
 }
 
 nav, h1, h2, h3 {
@@ -92,8 +99,7 @@ nav, h2 {
 p, a {
     font-family: 'karla', sans-serif;
     text-align: left;
-    font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     margin-bottom: 10px;
 }
 
@@ -216,6 +222,10 @@ a:link, a:visited {
     p {
         display: inline-block;
     }
+
+    nav {
+        background: rgba(255, 255, 255, .9);
+    }
     
     .nav-list {
         display: flex;
@@ -241,12 +251,21 @@ a:link, a:visited {
         line-height: 40px;
     }
 
+    .about p, .projects p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+
     .about .container {
         -webkit-column-count: 2; 
         -moz-column-count: 2;
         column-count: 2;
-    }    
-
+        -webkit-column-gap: 36px;
+        -moz-column-gap: 36px;
+        column-gap: 36px;
+    }
+    
     .about img {
         display: unset;
         max-width: 30vw;
@@ -306,7 +325,8 @@ a:link, a:visited {
     }
 
     .nav-list li {
-        padding: 25px 0;
+        margin: 25px 0;
+        padding: 0;
     }
 
     nav {
@@ -315,6 +335,7 @@ a:link, a:visited {
         right: unset;
         bottom: 0;
         padding: 0 10px;
+        background: unset;
     }
 
     .home p {
@@ -323,7 +344,7 @@ a:link, a:visited {
     }
 
     .about .container {
-        width: 30vw;
+        width: 40vw;
         -webkit-column-count: unset; 
         -moz-column-count: unset;
         column-count: unset;
@@ -335,13 +356,14 @@ a:link, a:visited {
         max-height: 40vh;
         border-radius: 4%;
         filter: grayscale(100%);
-        margin-right: 20px;
+        margin: 8px 30px 0 0;
     }
 
     .about-flex {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
+        align-items: flex-start;
     }
 
     .screenshot-medium {
