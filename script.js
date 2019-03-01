@@ -34,6 +34,7 @@ function handleHomeTab() {
     $('.nav-list').on('click', '#home', function(event) {
     console.log("ran handleHomeTab");  
     toggleHideHome();
+    openHideMenu();
     });
 }
 
@@ -41,6 +42,7 @@ function handleAboutTab() {
     $('.nav-list').on('click', '#about', function(event) {
     console.log("ran handleAboutTab");  
     toggleHideAbout();
+    openHideMenu();
     });
 }
 
@@ -48,6 +50,7 @@ function handleProjectsTab() {
     $('.nav-list').on('click', '#projects', function(event) {
     console.log("ran handleProjectsTab");  
     toggleHideProjects();
+    openHideMenu();
     });
 }
 
@@ -55,7 +58,25 @@ function handleContactTab() {
     $('.nav-list').on('click', '#contact', function(event) {
     console.log("ran handleContactTab");  
     toggleHideContact();
+    openHideMenu();
     });
+}
+
+function openHideMenu() {
+    $('nav').find('.nav-list').toggleClass('js-menu');
+}
+
+function handleHamburgerMenu() {
+    $('.navbar').on('click', '.hamburger', function(event) {
+        console.log("ran handleHamburgerMenu");
+        openHideMenu();
+    });
+}
+
+function handleIconClick() {
+    $('.navbar').on('click', '.icon', function(event) {
+        location.reload();
+    })
 }
 
 function runPortfolio() {
@@ -63,6 +84,8 @@ function runPortfolio() {
     handleAboutTab();
     handleProjectsTab();
     handleContactTab();
+    handleHamburgerMenu();
+    handleIconClick();
 }
 
 $(runPortfolio);

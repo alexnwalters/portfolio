@@ -12,6 +12,14 @@ body {
     display: none;
 }
 
+header.js-hide {
+    display: none;
+}
+
+.js-menu{
+    display: none;
+}
+
 .home {
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .5), white, white), url(images/palm_sky1.jpg);
@@ -43,9 +51,6 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     padding: 10px 10px;
     top: 0;
@@ -55,19 +60,31 @@ nav {
     z-index: 1;
 }
 
-.nav-list {
+.icon {
+    display: block;
+    text-align: left;
+}
+
+.icon:hover {
+    color: #00bb7d;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;    
+}
+
+.nav-list li {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 .nav-list li:hover {
     font-weight: bold;
     color: #00d9ff;
-}
-
-.hamburger {
-    display: flex;
-    justify-content: flex-end;
 }
 
 .hamburger img {
@@ -152,7 +169,7 @@ section .container {
     right: 0;
 }
 
-.about img, .screenshot-medium, .screenshot-wide, .nav-list, footer {
+.about img, .screenshot-medium, .screenshot-wide, footer {
     display: none;
 }
 
@@ -224,6 +241,9 @@ a:link, a:visited {
     }
 
     nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background: rgba(255, 255, 255, .9);
     }
     
@@ -235,6 +255,8 @@ a:link, a:visited {
     }
 
     .nav-list li {
+        font-size: 18px;
+        margin-top: unset;
         padding: 0 20px;
     }
 
