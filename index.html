@@ -15,19 +15,19 @@
 <body>
     <nav role="navigation" class="navbar">
         <h1 class="icon">AW</h1>
-        <ul class="nav-list js-menu">
-            <li id="home">Home</li>
-            <li id="about">About</li>
-            <li id="projects">Projects</li>
-            <li id="contact">Contact</li>
-        </ul>
+        <div class="nav-list js-menu">
+            <a href="#home" id="home-nav">Home</a>
+            <a href="#about" id="about-nav">About</a>
+            <a href="#projects" id="projects-nav">Projects</a>
+            <a href="#contact" id="contact-nav">Contact</a>
+        </div>
         <div class="hamburger">
-            <img src="images/noun_menu_1561734.png" alt="hamburger menu">
+            <img src="images/menu.png" alt="hamburger menu">
         </div>
     </nav>
     
     <main role="main">
-        <header role="banner" class="home">
+        <header role="banner" id="home" class="home">
             <div class="mugshot">
                 <img src="images/hero1.jpg" alt="headshot">
             </div>
@@ -38,7 +38,7 @@
             </p>
         </header>
 
-        <section class="about">
+        <section id="about" class="about">
             <h2>About</h2>
             <div class="about-flex">
             
@@ -64,7 +64,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="container">
                 <h3>Name that State! - Quiz App</h3>
@@ -81,7 +81,7 @@
                         A quiz game, used to test <span class="highlight-green">javascript</span> and <span class="highlight-green">jquery</span> skills.
                         This quiz game, by user control, will run through a set quiz questions one at a time.
                         It will provide feedback to the user’s input while keeping track of the question number and score. The score will be graded at the end and then allow the user to restart the quiz upon completion.
-                    </p>
+                    </p>                
                     <br>
                     <a href="https://name-that-state-quiz-app--alexanderwalter.repl.co/">Live</a>
                     <a href="https://github.com/alexnwalters/quiz_app.git">Repo</a>
@@ -89,7 +89,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <div class="container">
                 <ul class="socials">
