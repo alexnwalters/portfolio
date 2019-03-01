@@ -32,9 +32,9 @@ function toggleHideContact() {
 
 function handleHomeTab() {
     $('.nav-list').on('click', '#home', function(event) {
-    console.log("ran handleHomeTab");  
+    console.log("ran handleHomeTab");
     toggleHideHome();
-    openHideMenu();
+    location.reload();
     });
 }
 
