@@ -98,6 +98,10 @@ header, section {
     padding: 100px 0;
 }
 
+.contact {
+    padding-bottom: 0;
+}
+
 .mugshot img {
     height: 30vh;
     border-radius: 50%;
@@ -209,6 +213,14 @@ section .container {
     height: 60vh;
 }
 
+.socials img {
+    width: 80px;
+}
+
+.socials img:hover {
+    width: 90px;
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: unset;
@@ -223,7 +235,7 @@ a:link, a:visited {
     margin-left: 10px;
 }
 
-.projects a:hover, .socials a:hover {
+.projects a:hover {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
@@ -231,10 +243,6 @@ a:link, a:visited {
     -webkit-text-decoration-color: #00bb7d;
     text-decoration-line: underline;
     text-decoration-color: #00bb7d;
-}
-
-.socials a {
-    font-size: 32px;
 }
 
 @media screen and (min-width: 520px) {
