@@ -9,8 +9,7 @@
     <meta property="og:description" content="Alex Walters' Web Portfolio">
 	<title>Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Oswald&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -18,10 +17,9 @@
 </head>
 
 <body>
-    <nav role="navigation" class="navbar">
-        <h1 class="icon"><img src="images/pineapple.png" alt="icon"></h1>
+    <nav class="navbar">
+        <div class="hello"><a href="#home" id="home-nav">AW</a></div>
         <div class="nav-list js-menu">
-            <a href="#home" id="home-nav">Home</a>
             <a href="#about" id="about-nav">About</a>
             <a href="#projects" id="projects-nav">Projects</a>
             <a href="#contact" id="contact-nav">Contact</a>
@@ -31,8 +29,8 @@
         </div>
     </nav>
     
-    <main role="main">
-        <header role="banner" id="home" class="home">
+    <main>
+        <section id="home" class="home">
             <div class="mugshot">
                 <img src="images/hero1.jpg" alt="headshot">
             </div>
@@ -41,13 +39,17 @@
                 <br>
                 I’m a <span class="underline-blue">web developer</span> and <span class="underline-green">designer</span>.
             </p>
-        </header>
+        </section>
 
         <section id="about" class="about">
             <h2>About</h2>
             <div class="about-flex">
             
             <div class="container">
+                    <p>
+                        Hi there.  Feel free to call me Alex, but my full name is Alexander Walters.
+                    </p>
+                    <br>
                     <p>
                         I live and work in the Washington D.C. Metro area, where I completed my undergraduate studies at the University of Maryland.  In the years since I have worked a variety of finance jobs.  Looking for an opportunity to transition into a career in a more inventive industry, I enrolled in a Web Development Bootcamp at Bloc.
                     </p>
@@ -72,52 +74,11 @@
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="container">
-                <h3>Name that State! - Quiz App</h3>
-
-                <div class="screenshot">
-                    <img class="screenshot-top" src="images/quiz_mobile_home.png" alt="Quiz App Mobile Screenshot">
-                    <img class="screenshot-bottom" src="images/quiz_mobile_question.png" alt="Quiz App Mobile Screenshot">
-                    <img class="screenshot-medium" src="images/quiz_app_tablet.png" alt="Quiz App Tablet Screenshot">
-                    <img class="screenshot-wide" src="images/quiz_full_desktop.png" alt="Quiz App Full Screenshot">
-                </div>
-                <div class="details-links">
-                    <p>
-                        My first from scratch responsive web app.
-                        A quiz game, used to test <span class="highlight-green">javascript</span> and <span class="highlight-green">jquery</span> skills.
-                        This quiz game, by user control, will run through a set quiz questions one at a time.
-                        It will provide feedback to the user’s input while keeping track of the question number and score. The score will be graded at the end and then allow the user to restart the quiz upon completion.
-                    </p>                
-                    <br>
-                    <a href="https://alexnwalters.github.io/quiz_app/" target="_blank">Live</a>
-                    <a href="https://github.com/alexnwalters/quiz_app" target="_blank">Repo</a>
-                </div>
-            </div>
-            <div class="container">
-                <h3>Box Office Brawl! - Movie API App</h3>
-
-                <div class="screenshot">
-                    <img class="screenshot-top" src="images/movie_mobile_scorecard.png" alt="Movie App Mobile Screenshot">
-                    <img class="screenshot-bottom" src="images/movie_mobile_info.png" alt="Movie App Mobile Screenshot">
-                    <img class="screenshot-medium" src="images/movie_tablet_search.png" alt="Movie App Tablet Screenshot">
-                    <img class="screenshot-wide" src="images/movie_full_desktop.png" alt="Movie App Full Screenshot">
-                </div>
-                <div class="details-links">
-                    <p>
-                        This app allows users to compare the ratings of two movies based on their Internet Movie Database (IMDb), Rotten Tomatoes, and Metacritic Scores.
-                        The app makes use of both The Movie Database (TMDb) API and the Open Movie Database (OMDb) API.
-                        The purpose of this app was a practice in using an <span class="highlight-green">API</span> and munipulating <span class="highlight-green">JSON</span> objects into the apps' DOM.
-                    </p>                
-                    <br>
-                    <a href="https://alexnwalters.github.io/movie-api/" target="_blank">Live</a>
-                    <a href="https://github.com/alexnwalters/movie-api" target="_blank">Repo</a>
-                </div>
-            </div>
-            <div class="container">
                 <h3>Beer Diary - Full-Stack App</h3>
 
                 <div class="screenshot">
-                    <img class="screenshot-top" src="images/beer_diary_upper.png" alt="Beer Diary App Mobile Screenshot">
-                    <img class="screenshot-bottom" src="images/beer_diary_lower.png" alt="Beer Diary App Mobile Screenshot">
+                    <img class="screenshot-top" src="images/beer_diary_upper.png" alt="Beer Diary App Mobile Screenshot Top">
+                    <img class="screenshot-bottom" src="images/beer_diary_lower.png" alt="Beer Diary App Mobile Screenshot Bottom">
                     <img class="screenshot-medium" src="images/beer_diary_tablet.png" alt="Beer Diary Tablet Screenshot">
                     <img class="screenshot-wide" src="images/beer_diary_desktop.png" alt="Beer Diary Full Screenshot">
                 </div>
@@ -133,8 +94,48 @@
                     <a href="https://github.com/alexnwalters/beer-diary-app" target="_blank">Repo</a>
                 </div>
             </div>
-        </section>
+            <div class="container">
+                <h3>Box Office Brawl! - Movie API App</h3>
 
+                <div class="screenshot">
+                    <img class="screenshot-top" src="images/movie_mobile_scorecard.png" alt="Movie App Mobile Screenshot Top">
+                    <img class="screenshot-bottom" src="images/movie_mobile_info.png" alt="Movie App Mobile Screenshot Bottom">
+                    <img class="screenshot-medium" src="images/movie_tablet_search.png" alt="Movie App Tablet Screenshot">
+                    <img class="screenshot-wide" src="images/movie_full_desktop.png" alt="Movie App Full Screenshot">
+                </div>
+                <div class="details-links">
+                    <p>
+                        This app allows users to compare the ratings of two movies based on their Internet Movie Database (IMDb), Rotten Tomatoes, and Metacritic Scores.
+                        The app makes use of both The Movie Database (TMDb) API and the Open Movie Database (OMDb) API.
+                        The purpose of this app was a practice in using an <span class="highlight-green">API</span> and munipulating <span class="highlight-green">JSON</span> objects into the apps' DOM.
+                    </p>                
+                    <br>
+                    <a href="https://alexnwalters.github.io/movie-api/" target="_blank">Live</a>
+                    <a href="https://github.com/alexnwalters/movie-api" target="_blank">Repo</a>
+                </div>
+            </div>
+            <div class="container">
+                <h3>Name that State! - Quiz App</h3>
+
+                <div class="screenshot">
+                    <img class="screenshot-top" src="images/quiz_mobile_home.png" alt="Quiz App Mobile Screenshot Top">
+                    <img class="screenshot-bottom" src="images/quiz_mobile_question.png" alt="Quiz App Mobile Screenshot Bottom">
+                    <img class="screenshot-medium" src="images/quiz_app_tablet.png" alt="Quiz App Tablet Screenshot">
+                    <img class="screenshot-wide" src="images/quiz_full_desktop.png" alt="Quiz App Full Screenshot">
+                </div>
+                <div class="details-links">
+                    <p>
+                        My first from scratch responsive web app.
+                        A quiz game, used to test <span class="highlight-green">javascript</span> and <span class="highlight-green">jquery</span> skills.
+                        This quiz game, by user control, will run through a set quiz questions one at a time.
+                        It will provide feedback to the user’s input while keeping track of the question number and score. The score will be graded at the end and then allow the user to restart the quiz upon completion.
+                    </p>                
+                    <br>
+                    <a href="https://alexnwalters.github.io/quiz_app/" target="_blank">Live</a>
+                    <a href="https://github.com/alexnwalters/quiz_app" target="_blank">Repo</a>
+                </div>
+            </div>
+        </section>
         <section id="contact" class="contact">
             <h2>Contact</h2>
             <div class="container">
@@ -158,7 +159,5 @@
             </div>      
         </section>
     </main>
-
-    <footer role="footer">Footer</footer>
 </body>
 </html>
