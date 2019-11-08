@@ -353,7 +353,6 @@ a:link, a:visited {
 
 @media screen and (min-width: 1040px) {
     h1 {
-        position: absolute;
         top: 10px;
     }
     
