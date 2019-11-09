@@ -231,9 +231,16 @@ section .container {
 a:link, a:visited {
     text-decoration: none;
     color: unset;
-  }
+}
 
 .projects a {
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #00d9ff;
+    text-decoration-line: underline;
+    text-decoration-color: #00d9ff;
+}
+
+.projects .project_link {
     font-weight: bold;
     -webkit-text-decoration-line: underline;
     -webkit-text-decoration-color: #00d9ff;
@@ -242,7 +249,7 @@ a:link, a:visited {
     margin-left: 10px;
 }
 
-.projects a:hover {
+.projects .project_link:hover {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
@@ -414,7 +421,7 @@ a:link, a:visited {
         display: unset;
     }
 
-    .projects p, .projects a {
+    .projects p, .projects .project_link {
         font-size: 20px;
     }
 
