@@ -122,7 +122,7 @@ nav, h2 {
     text-transform: uppercase;
 }
 
-p, .projects a, .contact a {
+p, .projects a, .contact a, .about a {
     font-family: 'karla', sans-serif;
     text-align: left;
     line-height: 24px;
@@ -233,7 +233,7 @@ a:link, a:visited {
     color: unset;
 }
 
-.projects a {
+.projects a, .about a {
     -webkit-text-decoration-line: underline;
     -webkit-text-decoration-color: #00d9ff;
     text-decoration-line: underline;
@@ -253,6 +253,14 @@ a:link, a:visited {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #00bb7d;
+    text-decoration-line: underline;
+    text-decoration-color: #00bb7d;
+}
+
+.projects a:hover, .about a:hover {
+    font-weight: bold;
     -webkit-text-decoration-line: underline;
     -webkit-text-decoration-color: #00bb7d;
     text-decoration-line: underline;
